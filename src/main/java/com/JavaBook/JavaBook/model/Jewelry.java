@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Jewelry") // SQL table name
+@Table(name = "jewelry") // SQL table name
 
 public class Jewelry {
 
@@ -14,6 +14,7 @@ public class Jewelry {
 
     @Id
     @Column // to create the column inside PgAdmin
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
 
@@ -29,9 +30,9 @@ public class Jewelry {
 
 
     @JsonIgnore //used to ignore this property during serialization and deserialization
-    @ManyToMany //this entity has a many-to-many relationship with another entity.
-    @JoinColumn(name = "category_id") // the column in this entity will map to the foreign key column in the join table
-    private Category category;
+    @ManyToOne //many jewelry to one jewelry tpe.
+    @JoinColumn(name = "jewelryType_id") // the column in this entity will map to the foreign key column in the join table
+    private JewelryType jewelryType;
 
 
 

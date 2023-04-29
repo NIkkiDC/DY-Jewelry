@@ -1,4 +1,4 @@
 package com.JavaBook.JavaBook.repository;
 
-public interface CategoryRepository {
+public interface JewelryTypeRepository {
 }
