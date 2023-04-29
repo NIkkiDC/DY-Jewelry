@@ -1,6 +1,11 @@
 package com.JavaBook.JavaBook.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -13,8 +18,15 @@ public class User {
     @GeneratedValue
     private Long id;
 
-    @Column
+    @Column // creating column
     private String userName;
+
+    @Column(unique = true) // creating column
+    private String emailAddress;
+
+    @Column // creating column
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) //converted to JSON when writing to a JSON string and not converted from JSON when reading from a JSON string
+    private String password; // ^ this is used to hide the password
 
 
     public User() {
