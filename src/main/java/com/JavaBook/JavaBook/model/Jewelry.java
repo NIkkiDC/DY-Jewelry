@@ -70,43 +70,29 @@ public class Jewelry {
         return metal;
     }
 
-
-
     public void setMetal(String metal) {
         this.metal = metal;
     }
-
-
 
     public String getStone() {
         return stone;
     }
 
-
-
     public void setStone(String stone) {
         this.stone = stone;
     }
-
-
 
     public Integer getPrice() {
         return price;
     }
 
-
-
     public void setPrice(Integer price) {
         this.price = price;
     }
 
-
-
     public JewelryType getJewelryType() {
         return jewelryType;
     }
-
-
 
     public void setJewelryType(JewelryType jewelryType) {
         this.jewelryType = jewelryType;
