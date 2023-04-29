@@ -14,6 +14,16 @@ public class JewelryType {
     private Long id;
 
 
+    @Id
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // this is the primary key
+    private Long id;
+
+    private String brand;
+
+    private String description;
+
+
 
 
 
