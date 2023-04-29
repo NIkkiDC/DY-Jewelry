@@ -8,12 +8,7 @@ import javax.persistence.*;
 
 public class JewelryType {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Id
-    @Column
-    private Long id;
-
-
+    
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY) // this is the primary key
