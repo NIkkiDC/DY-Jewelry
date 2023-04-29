@@ -17,7 +17,7 @@ public class Jewelry {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
+// im not sure why they are grey, and not purple, I hope they work
     @Column
     private String metal;  //metal type, stone type, and price range
 
