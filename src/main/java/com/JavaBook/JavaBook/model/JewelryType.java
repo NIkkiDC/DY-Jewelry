@@ -21,8 +21,8 @@ public class JewelryType {
     @Column // creating a column in the table
     private String description;
 
-
-
+    public JewelryType() {
+    }
 
 
     public void setId(Long id) {
