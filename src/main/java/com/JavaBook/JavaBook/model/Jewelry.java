@@ -55,13 +55,13 @@ public class Jewelry {
         return id;
     }
 
-    @Override
-    public String toString() {
+    @Override // overriding the class "Jewelry
+    public String toString() { // returning a string that includes the values of instance variables of the Jewelry
         return "Jewelry{" +
                 "id=" + id +
-                ", metal='" + metal + '\'' +
-                ", stone='" + stone + '\'' +
-                ", price=" + price +
+                ", metal='" + metal + '\'' + // metal & stone in single quotes
+                ", stone='" + stone + '\'' + // bc this isnt returning a numeric value
+                ", price=" + price + // not returning the single quotes bc it is a numeric value
                 ", jewelryType=" + jewelryType +
                 '}';
     }
