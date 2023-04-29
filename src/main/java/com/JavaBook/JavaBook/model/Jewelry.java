@@ -55,16 +55,6 @@ public class Jewelry {
         return id;
     }
 
-    @Override // overriding the class "Jewelry
-    public String toString() { // returning a string that includes the values of instance variables of the Jewelry
-        return "Jewelry{" +
-                "id=" + id +
-                ", metal='" + metal + '\'' + // metal & stone in single quotes
-                ", stone='" + stone + '\'' + // bc this isnt returning a numeric value
-                ", price=" + price + // not returning the single quotes bc it is a numeric value
-                ", jewelryType=" + jewelryType +
-                '}';
-    }
 
     public String getMetal() {
         return metal;
@@ -96,5 +86,16 @@ public class Jewelry {
 
     public void setJewelryType(JewelryType jewelryType) {
         this.jewelryType = jewelryType;
+    }
+
+    @Override // overriding the class "Jewelry
+    public String toString() { // returning a string that includes the values of instance variables of the Jewelry
+        return "Jewelry{" +
+                "id=" + id +
+                ", metal='" + metal + '\'' + // metal & stone in single quotes
+                ", stone='" + stone + '\'' + // bc this isnt returning a numeric value
+                ", price=" + price + // not returning the single quotes bc it is a numeric value
+                ", jewelryType=" + jewelryType +
+                '}';
     }
 }
