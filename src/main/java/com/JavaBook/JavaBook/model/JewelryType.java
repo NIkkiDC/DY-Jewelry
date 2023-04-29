@@ -5,6 +5,7 @@ import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "jewelryType") // SQL table name
@@ -56,5 +57,18 @@ public class JewelryType {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @OneToMany(mappedBy = "jewelryType", orphanRemoval = true)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Jewelry> jewelryList;
+
+    @Override
+    public String toString() {
+        return "JewelryType{" +
+                "id=" + id +
+                ", brand='" + brand + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }
