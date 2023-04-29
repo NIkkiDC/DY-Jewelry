@@ -28,8 +28,16 @@ public class UserProfile {
     @OneToOne(mappedBy = "userProfile")
     private User user;
 
+    public UserProfile() {
+    }
 
-
+    public UserProfile(Long id, String firstName, String lastName, String accountDescription, User user) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.accountDescription = accountDescription;
+        this.user = user;
+    }
 
 
     public void setId(Long id) {
