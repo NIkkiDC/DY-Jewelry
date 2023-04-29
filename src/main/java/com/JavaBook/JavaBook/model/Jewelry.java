@@ -14,7 +14,7 @@ public class Jewelry {
 
     @Id
     @Column // to create the column inside PgAdmin
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // this is the primary key
     private Long id;
 
 // im not sure why they are grey, and not purple, I hope they work
@@ -34,6 +34,17 @@ public class Jewelry {
     @JoinColumn(name = "jewelryType_id") // the column in this entity will map to the foreign key column in the join table
     private JewelryType jewelryType;
 
+    public Jewelry(Long id, String metal, String stone, Integer price, JewelryType jewelryType) {
+        this.id = id;
+        this.metal = metal;
+        this.stone = stone;
+        this.price = price;
+        this.jewelryType = jewelryType;
+    }
+
+    public Jewelry() {
+
+    }
 
 
     public void setId(Long id) {
