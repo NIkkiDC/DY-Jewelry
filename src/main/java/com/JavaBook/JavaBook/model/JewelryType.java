@@ -71,6 +71,13 @@ public class JewelryType {
                 ", description='" + description + '\'' +
                 '}';
     }
+    public List<Jewelry> getJewelryList() {return jewelryList; }
+
+    public void setJewelryList(List<Jewelry> jewelryList) {this.jewelryList = jewelryList;}
+
+    public User getUser() {return user;}
+
+    public void setUser(User user) {this.user;}
 
 
 }

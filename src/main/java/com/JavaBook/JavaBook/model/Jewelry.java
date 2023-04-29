@@ -4,6 +4,7 @@ package com.JavaBook.JavaBook.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "jewelry") // SQL table name
@@ -98,4 +99,5 @@ public class Jewelry {
                 ", jewelryType=" + jewelryType +
                 '}';
     }
+
 }
