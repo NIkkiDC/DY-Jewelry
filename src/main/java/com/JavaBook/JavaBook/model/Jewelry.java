@@ -54,4 +54,15 @@ public class Jewelry {
     public Long getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "Jewelry{" +
+                "id=" + id +
+                ", metal='" + metal + '\'' +
+                ", stone='" + stone + '\'' +
+                ", price=" + price +
+                ", jewelryType=" + jewelryType +
+                '}';
+    }
 }
