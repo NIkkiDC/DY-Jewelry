@@ -82,6 +82,11 @@ public class UserProfile {
 
     @Override
     public String toString(){
-        return "UserProfile{"
+        return "UserProfile{" + "id=" + id + // instance variables of the UserProfile
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", profileDescription='" + accountDescription + '\'' +
+                ", user=" + user + //object of the class 'User'
+                '}';
     }
 }
