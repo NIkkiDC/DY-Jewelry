@@ -15,10 +15,10 @@ public class JewelryType {
     private Long id;
 
 
-    @Column
+    @Column // creating a column in the table
     private String brand;
 
-    @Column
+    @Column // creating a column in the table
     private String description;
 
 
