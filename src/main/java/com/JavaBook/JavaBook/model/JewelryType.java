@@ -59,8 +59,8 @@ public class JewelryType {
         this.description = description;
     }
 
-    @OneToMany(mappedBy = "jewelryType", orphanRemoval = true)
-    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "jewelryType", orphanRemoval = true) // one jewelryType to many jewelry
+    @LazyCollection(LazyCollectionOption.FALSE)// used to store the list of Jewelry objects
     private List<Jewelry> jewelryList;
 
     @Override
@@ -71,4 +71,6 @@ public class JewelryType {
                 ", description='" + description + '\'' +
                 '}';
     }
+
+
 }
