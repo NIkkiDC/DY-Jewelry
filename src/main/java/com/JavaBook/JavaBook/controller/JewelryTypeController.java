@@ -20,9 +20,14 @@ private JewelryTypeController jewelryTypeController; //declaring a private insta
     defining the public method taking the parameter JewelryTypeController. = to set the value of the jewelryTypeController instance variable.
     when this method is called it is setting the value of jewelryTypeController (used in dependency)
      */
+
+
     public void setJewelryTypeController(JewelryTypeController jewelryTypeController){this.jewelryTypeController = jewelryTypeController;}
 
 
     @GetMapping(path = "/jewelryTest/") //http://localhost:9091/jewelryTest/
     public String jewelryTest() {return "Jewelry Test";}
+
+
+
 }
