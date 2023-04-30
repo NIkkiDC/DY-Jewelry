@@ -3,10 +3,7 @@ package com.JavaBook.JavaBook.controller;
 
 import com.JavaBook.JavaBook.model.Jewelry;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -40,4 +37,12 @@ private JewelryTypeController jewelryTypeController; //declaring a private insta
     public Optional<Jewelry> getJewelry(@PathVariable Long jewelryId) {
         return jewelryTypeController.getJewelry(jewelryId);
     }
+    // creating a new jewelry object
+
+    @PostMapping(path = "/jewelry/")
+    public Jewelry createJewelry(@RequestBody Jewelry jewelryObject) {
+        return jewelryTypeController.createJewelry(jewelryObject);
+    }
+
+
 }
