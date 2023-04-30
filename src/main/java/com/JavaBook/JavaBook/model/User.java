@@ -53,6 +53,8 @@ public class User {
 
     public List<JewelryType> getJewelryTypeList() {return jewelryTypeList;}
 
+    public void setJewelryTypeList(List<JewelryType> jewelryTypeList) {this.jewelryTypeList = jewelryTypeList;}
+
 
 
 
