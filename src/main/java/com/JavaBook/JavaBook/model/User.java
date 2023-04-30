@@ -87,4 +87,16 @@ public class User {
     public void setUserProfile(UserProfile userProfile) {this.userProfile = userProfile;}
 
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                ", password='" + password + '\'' +
+                ", userProfile=" + userProfile +
+                ", jewelryList=" + jewelryList +
+                ", jewelryTypeList=" + jewelryTypeList +
+                '}';
+    }
 }
