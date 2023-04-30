@@ -4,10 +4,12 @@ package com.JavaBook.JavaBook.controller;
 import com.JavaBook.JavaBook.model.Jewelry;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 
 /*
@@ -31,6 +33,11 @@ private JewelryTypeController jewelryTypeController; //declaring a private insta
     @GetMapping(path = "/jewelryTest/") //http://localhost:9091/jewelryTest/
     public String jewelryTest() {return "Jewelry Test";}
 
-    @GetMapping(path = "/controller/") //http://localhost:9091/controller/
+    @GetMapping(path = "/jewelry/") //http://localhost:9091/jewelry/
     public List<Jewelry> getJewelry() {return jewelryTypeController.getJewelry();}
+
+    @GetMapping(path = "/jewelry/{jewelryId}") //http://localhost:9091/jewelry
+    public Optional<Jewelry> getJewelry(@PathVariable Long jewelryId) {
+        return jewelryTypeController.getJewelry(jewelryId);
+    }
 }
