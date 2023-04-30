@@ -1,5 +1,6 @@
 package com.JavaBook.JavaBook.controller;
 
+import com.JavaBook.JavaBook.model.LoginRequest;
 import com.JavaBook.JavaBook.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
