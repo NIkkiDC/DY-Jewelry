@@ -55,7 +55,13 @@ public class User {
 
     public void setJewelryTypeList(List<JewelryType> jewelryTypeList) {this.jewelryTypeList = jewelryTypeList;}
 
+    public String getPassword() {return password;}
 
+    public void setPassword(String password) {this.password = password;}
+
+    public UserProfile getUserProfile() {return userProfile;}
+
+    public void setUserProfile(UserProfile userProfile) {this.userProfile = userProfile;}
 
 
     public User(Long id, String userName, String emailAddress, String password) {
