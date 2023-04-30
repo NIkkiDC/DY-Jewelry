@@ -75,9 +75,7 @@ public class JewelryType {
 
     public void setJewelryList(List<Jewelry> jewelryList) {this.jewelryList = jewelryList;}
 
-    public User getUser() {return user;}
 
-    public void setUser(User user) {this.user;}
 
 
 }

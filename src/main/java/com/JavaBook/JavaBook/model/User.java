@@ -55,6 +55,16 @@ public class User {
 
     private List<JewelryType> jewelryTypeList;
 
+    public User(Long id, String userName, String emailAddress, String password, UserProfile userProfile, List<Jewelry> jewelryList, List<JewelryType> jewelryTypeList) {
+        this.id = id;
+        this.userName = userName;
+        this.emailAddress = emailAddress;
+        this.password = password;
+        this.userProfile = userProfile;
+        this.jewelryList = jewelryList;
+        this.jewelryTypeList = jewelryTypeList;
+    }
+
     public List<Jewelry> getJewelryList(){return jewelryList;}
 
     public void setJewelryList(List<Jewelry> jewelryList) {this.jewelryList = jewelryList;}
@@ -66,6 +76,8 @@ public class User {
 
     }
 
+
+
     public Long getId() {return id;}
 
     public void setId(Long id) {this.id = id;}
@@ -74,7 +86,7 @@ public class User {
 
     public void setUserName(String userName) {this.userName = userName;}
 
-    public String getEmailAddress() {return emailAddress}
+    public String getEmailAddress() {return emailAddress;}
 
    public void setEmailAddress(String emailAddress) {this.emailAddress = emailAddress;}
 
