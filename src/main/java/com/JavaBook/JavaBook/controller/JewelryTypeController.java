@@ -15,7 +15,7 @@ Defining the REST API endpoint for jewelry types that can be accessed through th
 @RestController
 @RequestMapping(path = "restapi") //http://localhost:9091/testing
 public class JewelryTypeController {
-private JewelryTypeController jewelryTypeController; //declaring a private instance variable jewelryTypeController of type JewelryTypeController.
+    private JewelryTypeController jewelryTypeController; //declaring a private instance variable jewelryTypeController of type JewelryTypeController.
 
 
     /*
@@ -24,14 +24,20 @@ private JewelryTypeController jewelryTypeController; //declaring a private insta
      */
 
     @Autowired
-    public void setJewelryTypeController(JewelryTypeController jewelryTypeController){this.jewelryTypeController = jewelryTypeController;}
+    public void setJewelryTypeController(JewelryTypeController jewelryTypeController) {
+        this.jewelryTypeController = jewelryTypeController;
+    }
 
 
     @GetMapping(path = "/jewelryTest/") //http://localhost:9091/jewelryTest/
-    public String jewelryTest() {return "Jewelry Test";}
+    public String jewelryTest() {
+        return "Jewelry Test";
+    }
 
     @GetMapping(path = "/jewelry/") //http://localhost:9091/jewelry/
-    public List<Jewelry> getJewelry() {return jewelryTypeController.getJewelry();}
+    public List<Jewelry> getJewelry() {
+        return jewelryTypeController.getJewelry();
+    }
 
     @GetMapping(path = "/jewelry/{jewelryId}") //http://localhost:9091/jewelry
     public Optional<Jewelry> getJewelry(@PathVariable Long jewelryId) {
@@ -45,8 +51,11 @@ private JewelryTypeController jewelryTypeController; //declaring a private insta
     }
 
     @PutMapping(path = "/jewelry/")
-    public  Jewelry updateJewelry(@PathVariable Long jewelryId, @RequestBody Jewelry jewelryObject) {
+    public Jewelry updateJewelry(@PathVariable Long jewelryId, @RequestBody Jewelry jewelryObject) {
         return jewelryTypeController.updateJewelry(jewelryId, jewelryObject);
     }
+
+
+
 
 }
