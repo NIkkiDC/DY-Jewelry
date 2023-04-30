@@ -22,6 +22,9 @@ public class UserController {
     @PostMapping("/register")
     public User createUser(@RequestBody User userObject) {return userController.createUser(userObject);}
 
-
+    @PostMapping
+    public ResponseEntity<?> loginUser(@RequestBody LoginRequest loginRequest) {
+        return userController.loginUser(loginRequest);
+    }
 
 }
