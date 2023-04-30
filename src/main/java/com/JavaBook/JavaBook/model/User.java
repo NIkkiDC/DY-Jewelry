@@ -47,6 +47,14 @@ public class User {
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<JewelryType> jewelryTypeList;
 
+    public List<Jewelry> getJewelryList(){return jewelryList;}
+
+    public void setJewelryList(List<Jewelry> jewelryList) {this.jewelryList = jewelryList;}
+
+    public List<JewelryType> getJewelryTypeList() {return jewelryTypeList;}
+
+
+
 
     public User(Long id, String userName, String emailAddress, String password) {
         this.id = id;
