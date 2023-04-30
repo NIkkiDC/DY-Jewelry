@@ -44,5 +44,9 @@ private JewelryTypeController jewelryTypeController; //declaring a private insta
         return jewelryTypeController.createJewelry(jewelryObject);
     }
 
+    @PutMapping(path = "/jewelry/")
+    public  Jewelry updateJewelry(@PathVariable Long jewelryId, @RequestBody Jewelry jewelryObject) {
+        return jewelryTypeController.updateJewelry(jewelryId, jewelryObject);
+    }
 
 }
