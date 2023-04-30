@@ -35,6 +35,13 @@ public class User {
 //    public User() {
 //    }
 
+    public User(Long id, String userName, String emailAddress, String password) {
+        this.id = id;
+        this.userName = userName;
+        this.emailAddress = emailAddress;
+        this.password = password;
+    }
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "profile_id", referencedColumnName = "id")
     private UserProfile userProfile;
@@ -45,6 +52,7 @@ public class User {
 
     @OneToMany(mappedBy = "user") // user can have more than one TYPE of jewelry
     @LazyCollection(LazyCollectionOption.FALSE)
+
     private List<JewelryType> jewelryTypeList;
 
     public List<Jewelry> getJewelryList(){return jewelryList;}
@@ -53,29 +61,26 @@ public class User {
 
     public List<JewelryType> getJewelryTypeList() {return jewelryTypeList;}
 
-    public void setJewelryTypeList(List<JewelryType> jewelryTypeList) {this.jewelryTypeList = jewelryTypeList;}
+
+    public User(){
+
+    }
+
+    public Long getId() {return id;}
+
+    public void setId(Long id) {this.id = id;}
+
+    public String getUserName() {return userName;}
+
+    public void setUserName(String userName) {this.userName = userName;}
+
+    public String getEmailAddress() {return emailAddress}
+
+   public void setEmailAddress(String emailAddress) {this.emailAddress = emailAddress;}
 
     public String getPassword() {return password;}
 
     public void setPassword(String password) {this.password = password;}
 
-    public UserProfile getUserProfile() {return userProfile;}
 
-    public void setUserProfile(UserProfile userProfile) {this.userProfile = userProfile;}
-
-
-    public User(Long id, String userName, String emailAddress, String password) {
-        this.id = id;
-        this.userName = userName;
-        this.emailAddress = emailAddress;
-        this.password = password;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
 }
