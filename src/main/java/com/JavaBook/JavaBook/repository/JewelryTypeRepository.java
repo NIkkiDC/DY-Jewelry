@@ -7,5 +7,7 @@ import java.util.List;
 
 public interface JewelryTypeRepository extends JpaRepository<JewelryType, Long> {
     List<JewelryType> findByCategoryId(Long categoryId);
-}
 
+
+    JewelryType findByIdAndUserId(Long recipeId, Long userId);
+}
