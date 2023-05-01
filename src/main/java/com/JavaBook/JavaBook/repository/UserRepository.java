@@ -7,4 +7,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     // register
 
 
+    boolean existsByEmailAddress(String emailAddress);
+
+
 }
