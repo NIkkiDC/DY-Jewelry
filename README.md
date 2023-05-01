@@ -102,15 +102,13 @@ The users id(primary key) is connected to the jewelry user_id (foreign key) with
 This project was diligently created by Dominique Collins. She is still working hard to implement new information that will improve the project. She is also welcoming all essential feedback, as she will duly note that, and eagerly make all changes ! 
 
 I would like to thank 
-Wanda Avery
+Wanda Avery Helping me with the ERD, re-explaining it. Helping me set the project up properly.
 
-Kim Nguyễn
+Kim Nguyễn Helping me start the project. I didnt know where to start
 
-Rachel Ehrlich
+Deshe Woods Helping me properly get Spring set up / dependencies 
 
-Deshe Woods 
-
-Suresh Sigera
+Suresh Sigera Informing me I need to read carefully
 
 Thanks For assisting me with this project  
 
