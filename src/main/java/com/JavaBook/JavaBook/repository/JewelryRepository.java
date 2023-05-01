@@ -13,5 +13,7 @@ public interface JewelryRepository extends JpaRepository<Jewelry, Long> {
     List<Jewelry> findByUserId(Long userId);
 
    Jewelry findByIdAndUserId(Long categoryId, Long userId);
+
+   Jewelry findByUserIdAndName(Long userId, String categoryName);
 }
 
