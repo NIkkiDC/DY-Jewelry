@@ -10,6 +10,13 @@ The JavaBook/ Dy project was created so users can sign in  and have immediate  a
 
 <hr> 
 
+# Project Planning 
+
+<img width="509" alt="Screenshot 2023-05-01 at 8 14 06 AM" src="https://user-images.githubusercontent.com/97572760/235456496-af201c0a-3e70-4b14-b16d-aa2a29b7d73b.png">
+
+
+
+<hr> 
 # Technologies Used 
 
 GitHub
