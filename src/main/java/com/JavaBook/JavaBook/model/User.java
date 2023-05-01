@@ -29,11 +29,6 @@ public class User {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) //converted to JSON when writing to a JSON string and not converted from JSON when reading from a JSON string
     private String password; // ^ this is used to hide the password
 
-//
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JsonIgnore(name = "profile_")
-//    public User() {
-//    }
 
     public User(Long id, String userName, String emailAddress, String password) {
         this.id = id;
