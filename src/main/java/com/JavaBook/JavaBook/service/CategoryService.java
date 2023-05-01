@@ -19,6 +19,13 @@ public class CategoryService {
     private JewelryTypeRepository jewelryTypeRepository;
 
     @Autowired
-    public void setCategoryRepository(JewelryTypeRepository jewelryTypeRepository) {
+    public void setJewelryRepository(JewelryRepository jewelryRepository) {
+        this.jewelryRepository = jewelryRepository;
+    }
+
+    @Autowired
+    public void setJewelryTypeRepository(JewelryTypeRepository jewelryTypeRepository) {
         this.jewelryTypeRepository = jewelryTypeRepository;
     }
+
+}
