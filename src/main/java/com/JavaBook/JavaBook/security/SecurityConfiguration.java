@@ -29,8 +29,8 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    public <JwtRequestFilter> JwtRequestFilter authJwtRequestFilter() {
-        return new JwtRequestFilter();
+    public <JwtRequestFilter> com.JavaBook.JavaBook.security.JwtRequestFilter authJwtRequestFilter() {
+        return new com.JavaBook.JavaBook.security.JwtRequestFilter();
     }
 
     // register user
