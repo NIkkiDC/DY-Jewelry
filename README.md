@@ -65,6 +65,15 @@ meet the selected criteria.
 
 <hr>  
 
+# Installation 
+# Dependencies 
+
+
+<img width="788" alt="Screenshot 2023-04-30 at 8 38 17 PM" src="https://user-images.githubusercontent.com/97572760/235391388-774530db-f382-47b5-b275-732dbe3af6e3.png">
+
+
+<hr>
+
  # ERD Diagram 
  
  
@@ -83,4 +92,33 @@ The username (foreign key) is connected to the user_id (foreign key) with a one 
 The Id (foreign key) is connected to the ID (primary) with a one to many relationship 
 
 The users id(primary key) is connected to the jewelry user_id (foreign key) with a one to many relationship 
+
+
+<hr>  
+
+
+# Credits  / Feedback 
+This project was diligently created by Dominique Collins. She is still working hard to implement new information that will improve the project. She is also welcoming all essential feedback, as she will duly note that, and eagerly make all changes ! 
+
+I would like to thank 
+Wanda Avery
+
+Kim Nguyễn
+
+Rachel Ehrlich
+
+Deshe Woods 
+
+Suresh Sigera
+
+Thanks For assisting me with this project  
+
+# Reflection 
+
+I am still struggling with the functionality of it all, I am diligently doing research to be sure the project provides accurate information and works properly.
+
+One thing I would do differently is try my hardest to take more notes in classs, although it is rigorous since I have to code, I dont want to fall behind with the coding. I would also add more comments to myself in the code since it is my code, even though it essentially is not professional
+
+
+<hr> 
 
