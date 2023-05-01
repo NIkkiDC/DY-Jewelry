@@ -5,6 +5,7 @@ Java project
 # Project Overview 
 
 Users can create an account with a username, email address, and password. The users information is protected by the security measures that were implemented throughout the project. 
+
 The JavaBook/ Dy project was created so users can sign in  and have immediate  access to all of their information about jewelry on the David Yurman site. Once Users have logged in, they will then be able to utilize the search bar, and look for key pieces of jewelry they are interested in.
 
 <hr> 
