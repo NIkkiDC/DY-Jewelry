@@ -1,4 +1,11 @@
 package com.JavaBook.JavaBook.repository;
 
-public class JewelryRepository {
+
+import com.JavaBook.JavaBook.model.Jewelry;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface JewelryRepository extends JpaRepository<Jewelry, Long> {
+    // select name from categories where name =
+    Jewelry findByName(String name);
 }
+
