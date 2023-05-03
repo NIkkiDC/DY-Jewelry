@@ -1,6 +1,7 @@
 package com.JavaBook.JavaBook.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
 
@@ -9,21 +10,27 @@ import java.util.List;
 
 @Entity
 @Table(name = "jewelryType") // SQL table name
-
 public class JewelryType {
-
 
     @Id
     @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY) // this is the primary key
     private Long id;
 
-
     @Column // creating a column in the table
     private String brand;
 
     @Column // creating a column in the table
     private String description;
+
+    @OneToMany(mappedBy = "jewelryType", orphanRemoval = true)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Jewelry> jewelryList;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    @JsonIgnore
+    private User user;
 
     public JewelryType() {
     }
@@ -58,10 +65,6 @@ public class JewelryType {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    @OneToMany(mappedBy = "jewelryType", orphanRemoval = true) // one jewelryType to many jewelry
-    @LazyCollection(LazyCollectionOption.FALSE)// used to store the list of Jewelry objects
-    private List<Jewelry> jewelryList;
 
     @Override
     public String toString() {

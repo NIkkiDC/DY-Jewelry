@@ -85,13 +85,7 @@ meet the selected criteria.
  # ERD Diagram 
  
  
- <img width="601" alt="Screenshot 2023-04-28 at 12 03 06 PM" src="https://user-images.githubusercontent.com/97572760/235390533-0a9a6553-5ef9-4ef1-96c4-ec6085f64020.png">
-
-<img width="596" alt="Screenshot 2023-04-30 at 8 22 07 PM" src="https://user-images.githubusercontent.com/97572760/235390569-59484666-7c72-499d-965f-c61844ee68fc.png">
-
-
-<img width="596" alt="Screenshot 2023-04-30 at 8 22 07 PM" src="https://user-images.githubusercontent.com/97572760/235390590-6b5a2ad9-ad23-46b1-b3b1-a4d264ff2b76.png">
-
+ 
 
  # Relationships 
  

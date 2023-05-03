@@ -8,10 +8,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "jewelry") // SQL table name
-
 public class Jewelry {
-
-
 
     @Id
     @Column // to create the column inside PgAdmin
@@ -26,36 +23,38 @@ public class Jewelry {
     private String stone;  //metal type, stone type, and price range
 
     @Column
-    private Integer price;  //metal type, stone type, and price range
+    private Double price;  //metal type, stone type, and price range
 
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
-
-    @JsonIgnore //used to ignore this property during serialization and deserialization
-    @ManyToOne //many jewelry to one jewelry tpe.
-    @JoinColumn(name = "jewelryType_id") // the column in this entity will map to the foreign key column in the join table
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "beverageType_id")
     private JewelryType jewelryType;
 
-    public Jewelry(Long id, String metal, String stone, Integer price, JewelryType jewelryType) {
+
+    public Jewelry() {
+    }
+
+    public Jewelry(Long id, String metal, String stone, Double price, User user, JewelryType jewelryType) {
         this.id = id;
         this.metal = metal;
         this.stone = stone;
         this.price = price;
+        this.user = user;
         this.jewelryType = jewelryType;
-    }
-
-    public Jewelry() {
-
-    }
-
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public Long getId() {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getMetal() {
         return metal;
@@ -73,12 +72,20 @@ public class Jewelry {
         this.stone = stone;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public JewelryType getJewelryType() {
@@ -89,15 +96,15 @@ public class Jewelry {
         this.jewelryType = jewelryType;
     }
 
-    @Override // overriding the class "Jewelry
-    public String toString() { // returning a string that includes the values of instance variables of the Jewelry
+    @Override
+    public String toString() {
         return "Jewelry{" +
                 "id=" + id +
-                ", metal='" + metal + '\'' + // metal & stone in single quotes
-                ", stone='" + stone + '\'' + // bc this isnt returning a numeric value
-                ", price=" + price + // not returning the single quotes bc it is a numeric value
+                ", metal='" + metal + '\'' +
+                ", stone='" + stone + '\'' +
+                ", price=" + price +
+                ", user=" + user +
                 ", jewelryType=" + jewelryType +
                 '}';
     }
-
 }
