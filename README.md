@@ -1,8 +1,8 @@
-# DY-Jewelry
+# 💍 DY-Jewelry 
 Java project 
 
 
-# Project Overview 
+# 💎 Project Overview 
 
 Users can create an account with a username, email address, and password. The users information is protected by the security measures that were implemented throughout the project. 
 
@@ -10,14 +10,15 @@ The JavaBook/ Dy project was created so users can sign in  and have immediate  a
 
 <hr> 
 
-# Project Planning 
+#  Project Planning 
 
 <img width="509" alt="Screenshot 2023-05-01 at 8 14 06 AM" src="https://user-images.githubusercontent.com/97572760/235456496-af201c0a-3e70-4b14-b16d-aa2a29b7d73b.png">
 
 
 
 <hr> 
-#  Technologies Used 
+
+ #  Technologies Used 
 
 GitHub
 
@@ -40,7 +41,7 @@ Apple notes
 
 <hr> 
 
-# User Stories 
+#  User Stories 
 1. As a user I should be able to go on to the site to create an account 
 
 2. As a user I should be able to have access to all the jewelry I have liked on the site in one place 
@@ -73,8 +74,7 @@ meet the selected criteria.
 
 <hr>  
 
-# Installation 
-# Dependencies 
+#  Installation / Dependencies 
 
 
 <img width="788" alt="Screenshot 2023-04-30 at 8 38 17 PM" src="https://user-images.githubusercontent.com/97572760/235391388-774530db-f382-47b5-b275-732dbe3af6e3.png">
@@ -82,12 +82,12 @@ meet the selected criteria.
 
 <hr>
 
- # ERD Diagram 
+ # 💎 ERD Diagram 
  
  
  
 
- # Relationships 
+ # 💍👩🏿‍❤️‍👨🏿 Relationships 
  
 The username (foreign key) is connected to the user_id (foreign key) with a one to many relationship 
 
@@ -99,7 +99,7 @@ The users id(primary key) is connected to the jewelry user_id (foreign key) with
 <hr>  
 
 
-# Credits  / Feedback 
+#  Credits  / Feedback 
 This project was diligently created by Dominique Collins. She is still working hard to implement new information that will improve the project. She is also welcoming all essential feedback, as she will duly note that, and eagerly make all changes ! 
 
 I would like to thank 
@@ -113,7 +113,7 @@ Suresh Sigera Informing me I need to read carefully
 
 Thanks For assisting me with this project  
 
-# Reflection 
+#  Reflection 
 
 I am still struggling with the functionality of it all, I am diligently doing research to be sure the project provides accurate information and works properly.
 
