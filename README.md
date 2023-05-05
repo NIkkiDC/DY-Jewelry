@@ -84,16 +84,17 @@ meet the selected criteria.
 
  # 💎 ERD Diagram 
  
- 
+ <img width="883" alt="Screenshot 2023-05-04 at 7 54 45 AM" src="https://user-images.githubusercontent.com/97572760/236489274-51b8adf1-d43d-47a0-9627-320ff95115bb.png">
+
  
 
  # 💍👩🏿‍❤️‍👨🏿 Relationships 
  
-The username (foreign key) is connected to the user_id (foreign key) with a one to many relationship 
+The ID from the User table has a one to many relationship with the user_id in the Jewerly table
 
-The Id (foreign key) is connected to the ID (primary) with a one to many relationship 
+The ID from the User table has a one to many relationship with the user_id in the JewerlyType table
 
-The users id(primary key) is connected to the jewelry user_id (foreign key) with a one to many relationship 
+The ID in the  JewerlyType table has a one to many relatioship with the  jewerlytype_id inside the  Jewerly table 
 
 
 <hr>  
